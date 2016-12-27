@@ -14,9 +14,11 @@ git clone https://github.com/rthill/slack.git
 [slack]
     class_name = Slack
     class_path = plugins.slack
+    token = abc/def/ghi
 </pre>
 
 ## Usage
+Generate a token using https://<your_team>.slack.com/apps/new/A0F7XDUAZ-incoming-webhooks
 
 To send notifications use the following syntax in your logics:
 
