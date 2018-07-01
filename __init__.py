@@ -67,7 +67,7 @@ class Slack(SmartPlugin):
             response = res.text
             del res
             self.logger.debug(response)
-        except Exception as e:
+        except BaseException as e:
             self.logger.exception(e)
 
     def notify(self, channel, text, color='normal'):
