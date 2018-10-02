@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set encoding=utf-8 tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 #########################################################################
-#  Copyright 2016 Raoul Thill                       raoul.thill@gmail.com
+#  Copyright 2016-2018 Raoul Thill                  raoul.thill@gmail.com
 #########################################################################
 #  This file is part of SmartHomeNG.
 #
@@ -27,7 +27,7 @@ from lib.model.smartplugin import SmartPlugin
 
 class Slack(SmartPlugin):
     PLUGIN_VERSION = "1.0.0"
-    ALLOW_MULTIINSTANCE = False
+    ALLOW_MULTIINSTANCE = True
     SLACK_INCOMING_WEBHOOK = 'https://hooks.slack.com/services/%s'
     html_escape_table = {
         '&': "&amp;",
